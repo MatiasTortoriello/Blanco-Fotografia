@@ -236,10 +236,6 @@ a {
     margin-top: 1%;
     padding: 1%; }
 
-.descripcionGaleria__titulo--estilo {
-  font-family: "Open Sans", sans-serif;
-  font-style: italic; }
-
 /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */
 /*BREAKPOINT 2: SMALL (sm) >= 576px */
 /*BREAKPOINT 3: MEDIUM (md) >= 768px */
