@@ -1,6 +1,6 @@
-/*********************************************************************/
+
 /*************************ETIQUETAS GENERALES************************/
-/*******************************************************************/
+
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 * {
     margin: 0%;
@@ -23,6 +23,7 @@ a {
 }
   
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
+
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
 @media only screen and (min-width: 768px) {
     h1 {
@@ -45,16 +46,39 @@ a {
 /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
 /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
 
-
-
-/*********************************************************************/
-/************************SECCIÓN INICIO******************************/
-/*******************************************************************/
-
+/****************CAROUSEL**************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 #carousel {
-    display: $d-none; }
-  
+  display: $d-none; }
+  /*BREAKPOINT 2: SMALL (sm) >= 576px */
+
+  @media only screen and (min-width: 576px) {
+    #carousel {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      display: block; 
+    } 
+  }
+
+  /*BREAKPOINT 3: MEDIUM (md) >= 768px */
+  /*BREAKPOINT 4: LARGE (lg) >= 992px */
+  /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
+  /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
+  /*BREAKPOINT 1: X-SMALL (xs) <576px */
+  /*BREAKPOINT 2: SMALL (sm) >= 576px */
+  /*BREAKPOINT 3: MEDIUM (md) >= 768px */
+  /*BREAKPOINT 4: LARGE (lg) >= 992px */
+  /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
+  /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
+
+
+
+
+/************************SECCIÓN STAFF******************************/
+
+
+/*BREAKPOINT 1: X-SMALL (xs) <576px */
+
   #matias {
     display: $d-flex;
     flex-direction: column;
@@ -72,11 +96,7 @@ a {
     border-bottom: solid 2px black; }
   
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
-  @media only screen and (min-width: 576px) {
-    #carousel {
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      display: block; } }
+  
   
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
   /*BREAKPOINT 4: LARGE (lg) >= 992px */
@@ -94,9 +114,9 @@ a {
   /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
   /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
   
-  /*********************************************************************/
+ 
   /********************SECCIÓN GALERÍA*********************************/
-  /*******************************************************************/
+ 
   /*BREAKPOINT 1: X-SMALL (xs) <576px */
   .displayGaleria img {
     width: 100%;
@@ -112,18 +132,23 @@ a {
   /*BREAKPOINT 4: LARGE (lg) >= 992px */
   
   @media only screen and (min-width: 992px) {
-    .displayGaleria .col-lg-4 {
-      margin: 0 !important;
-      padding: 25px; }
-    .displayGaleria img {
-      width: 100%; } }
+    .displayGaleria{
+      .col-lg-4{
+        margin: 0 !important;
+        padding: 100px; 
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
   
   /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
   /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
   
-  /*************************************************************************/
+
   /*******************SECCIONES INTERNAS DE LA GALERÍA*********************/
-  /***********************************************************************/
+
   .galeriaFotos{
     display: $d-flex;
     flex-wrap: wrap;
@@ -174,45 +199,6 @@ a {
       font-family: $fontMain;
       font-style: italic;
   }
-  
-  /*************************************************************************/
-  /*************SECCIÓN PRESUPUESTOS***************************************/
-  /***********************************************************************/
-  .pasos__titulo--size{
-      font-style: italic;
-  }
-  
-  .pasos__lista--list-style{
-      list-style: decimal;
-  }
-  
-  .presupuesto {
-    background-color: rgba(0, 0, 0, 0.082);
-    color: black;
-    font-size: 90%;
-    font-weight: 600;
-    font-family: $fontMain;
-    margin-bottom: 5vh;
-    border: 1px solid black; }
-  
-  .presupuesto .row {
-    margin-right: 0 !important; }
-  
-  .precios__titulo--margen {
-    margin-bottom: 5%; }
-  
-  .precios__tabla--estilo {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 16% 12% 12% 12% 12% 12% 12% 12%;
-    text-align: center;
-    border: 1px solid black;
-    margin: 2%; }
-  
-  .precios__tabla--estilo div {
-    border: solid 1px black;
-    padding-bottom: 1.5%; }
-  
   
   
   /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */

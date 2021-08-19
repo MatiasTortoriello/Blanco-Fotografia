@@ -1,61 +1,45 @@
 @charset "UTF-8";
-/* ME COPIO EL .TXT ACÁ PARA TENERLO LO MÁS A MANO POSIBLE. SI ES MUY ILEGAL ESTO, AVISAME! JAJA
-
-1- DESCARGAR E INSTALAR NodeJs ------ https://nodejs.org/es/
-2- CMD ---- npm -v  ---- node -v
-3- CMD ---- (cd) change directory a mi proyecto
-4- CMD ---- npm init
-5- CMD ---- npm install -D node-sass nodemon
-6- EDITOR---- Abrir package.json
-7- EDITOR---- Agregar los sgt comandos donde estan los scripts --- 
-		"build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
-8- CMD ---- npm run build-css
-9- CMD ---- npm run watch-css*/
 /*Display*/
 /*Flexbox*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
-/*********************************************************************/
 /********************ELEMENTOS DEL NAV*******************************/
-/*******************************************************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
-.encabezado {
+.botonera {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-evenly;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 1%; }
-  .encabezado .encabezado__botonera {
+  .botonera ul {
     display: flex;
     justify-content: space-evenly;
-    list-style: none; }
-    .encabezado .encabezado__botonera .encabezado__botonera--color {
-      background-color: rgba(255, 255, 255, 0.733); }
-      .encabezado .encabezado__botonera .encabezado__botonera--color a {
-        text-decoration: none; }
-        .encabezado .encabezado__botonera .encabezado__botonera--color a :hover {
-          color: black; }
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.733); }
+    .botonera ul a {
+      text-decoration: none; }
+      .botonera ul a :hover {
+        color: black; }
 
 /*BREAKPOINT 2: SMALL (sm) >= 576px */
 @media only screen and (min-width: 576px) {
-  .encabezado {
+  .botonera {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 1.8rem; }
-    .encabezado .encabezado__botonera {
+    .botonera ul {
       display: flex;
       justify-content: space-evenly;
       list-style: none; } }
 
 /*BREAKPOINT 3: MEDIUM (md) >= 768px */
 @media only screen and (min-width: 768px) {
-  .encabezado {
+  .botonera {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly; }
-    .encabezado .encabezado__botonera {
+    .botonera ul {
       background-color: rgba(255, 255, 255, 0.733);
       margin-top: 1%;
       display: flex;
@@ -64,12 +48,12 @@
 
 /*BREAKPOINT 4: LARGE (lg) >= 992px */
 @media only screen and (min-width: 992px) {
-  .encabezado {
+  .botonera {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 1.8rem; }
-    .encabezado .encabezado__botonera {
+    .botonera ul {
       display: flex;
       justify-content: space-evenly;
       list-style: none; } }
@@ -95,9 +79,7 @@
   transform: scaleX(1);
   transform-origin: bottom left; }
 
-/*********************************************************************/
 /*************************ETIQUETAS GENERALES************************/
-/*******************************************************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 * {
   margin: 0%;
@@ -136,13 +118,30 @@ a {
 
 /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
 /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
-/*********************************************************************/
-/************************SECCIÓN INICIO******************************/
-/*******************************************************************/
+/****************CAROUSEL**************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 #carousel {
   display: none; }
 
+/*BREAKPOINT 2: SMALL (sm) >= 576px */
+@media only screen and (min-width: 576px) {
+  #carousel {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: block; } }
+
+/*BREAKPOINT 3: MEDIUM (md) >= 768px */
+/*BREAKPOINT 4: LARGE (lg) >= 992px */
+/*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
+/*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
+/*BREAKPOINT 1: X-SMALL (xs) <576px */
+/*BREAKPOINT 2: SMALL (sm) >= 576px */
+/*BREAKPOINT 3: MEDIUM (md) >= 768px */
+/*BREAKPOINT 4: LARGE (lg) >= 992px */
+/*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
+/*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
+/************************SECCIÓN STAFF******************************/
+/*BREAKPOINT 1: X-SMALL (xs) <576px */
 #matias {
   display: flex;
   flex-direction: column;
@@ -160,12 +159,6 @@ a {
   border-bottom: solid 2px black; }
 
 /*BREAKPOINT 2: SMALL (sm) >= 576px */
-@media only screen and (min-width: 576px) {
-  #carousel {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    display: block; } }
-
 /*BREAKPOINT 3: MEDIUM (md) >= 768px */
 /*BREAKPOINT 4: LARGE (lg) >= 992px */
 @media only screen and (min-width: 992px) {
@@ -181,9 +174,7 @@ a {
 
 /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
 /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
-/*********************************************************************/
 /********************SECCIÓN GALERÍA*********************************/
-/*******************************************************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 .displayGaleria img {
   width: 100%;
@@ -200,15 +191,13 @@ a {
 @media only screen and (min-width: 992px) {
   .displayGaleria .col-lg-4 {
     margin: 0 !important;
-    padding: 25px; }
+    padding: 100px; }
   .displayGaleria img {
     width: 100%; } }
 
 /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
 /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
-/*************************************************************************/
 /*******************SECCIONES INTERNAS DE LA GALERÍA*********************/
-/***********************************************************************/
 .galeriaFotos {
   display: flex;
   flex-wrap: wrap;
@@ -251,42 +240,6 @@ a {
   font-family: "Open Sans", sans-serif;
   font-style: italic; }
 
-/*************************************************************************/
-/*************SECCIÓN PRESUPUESTOS***************************************/
-/***********************************************************************/
-.pasos__titulo--size {
-  font-style: italic; }
-
-.pasos__lista--list-style {
-  list-style: decimal; }
-
-.presupuesto {
-  background-color: rgba(0, 0, 0, 0.082);
-  color: black;
-  font-size: 90%;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 5vh;
-  border: 1px solid black; }
-
-.presupuesto .row {
-  margin-right: 0 !important; }
-
-.precios__titulo--margen {
-  margin-bottom: 5%; }
-
-.precios__tabla--estilo {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 16% 12% 12% 12% 12% 12% 12% 12%;
-  text-align: center;
-  border: 1px solid black;
-  margin: 2%; }
-
-.precios__tabla--estilo div {
-  border: solid 1px black;
-  padding-bottom: 1.5%; }
-
 /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */
 /*BREAKPOINT 2: SMALL (sm) >= 576px */
 /*BREAKPOINT 3: MEDIUM (md) >= 768px */
@@ -299,9 +252,7 @@ a {
 /*BREAKPOINT 4: LARGE (lg) >= 992px */
 /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
 /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
-/*********************************************************************/
 /********************SECCIÓN FOOTER**********************************/
-/*******************************************************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 footer {
   display: flex;
