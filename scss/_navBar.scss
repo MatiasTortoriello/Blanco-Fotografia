@@ -81,10 +81,10 @@
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 0.4vh;
+    height: 0.5vh;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: rgb(0, 0, 0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out; 
   }

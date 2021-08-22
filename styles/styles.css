@@ -68,10 +68,10 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 0.4vh;
+  height: 0.5vh;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.267);
+  background-color: black;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out; }
 
@@ -148,27 +148,11 @@ a {
   border-bottom: solid 2px black;
   border-top: solid 2px black; }
 
-#pao {
-  display: flex;
-  flex-direction: column-reverse;
-  border-bottom: solid 2px black; }
-
-#matt {
-  display: flex;
-  flex-direction: column;
-  border-bottom: solid 2px black; }
-
 /*BREAKPOINT 2: SMALL (sm) >= 576px */
 /*BREAKPOINT 3: MEDIUM (md) >= 768px */
 /*BREAKPOINT 4: LARGE (lg) >= 992px */
 @media only screen and (min-width: 992px) {
   #matias {
-    display: flex;
-    flex-direction: row; }
-  #pao {
-    display: flex;
-    flex-direction: row; }
-  #matt {
     display: flex;
     flex-direction: row; } }
 
@@ -184,6 +168,13 @@ a {
   box-shadow: inset 0 0 100px black, 0 0 100px rgba(59, 59, 59, 0.671);
   outline-color: rgba(49, 138, 172, 0);
   outline-offset: 5rem; }
+
+/*  .galeria2 {
+
+    } */
+.displayGaleria2 {
+  background-image: url(/images/fotosGaleria/fotoUrbanoV.jpg);
+  width: 100%; }
 
 /*BREAKPOINT 2: SMALL (sm) >= 576px */
 /*BREAKPOINT 3: MEDIUM (md) >= 768px */

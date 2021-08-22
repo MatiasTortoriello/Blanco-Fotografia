@@ -1,3 +1,5 @@
+// Script del botón "Volver Arriba"
+
 boton = document.getElementById("volverArriba");
 
 // Cuando el usuario hace scroll más allá de los 1000px, el botón aparece
@@ -16,3 +18,5 @@ function topFunction() {
   document.body.scrollTop = 0; // Safari
   document.documentElement.scrollTop = 0; // Chrome, Firefox, IE y Opera
 }
+
+// Fin script del botón "Volver Arriba"
