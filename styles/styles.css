@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 /********************ELEMENTOS DEL NAV*******************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
+@import url(animate.css);
 .botonera {
   display: flex;
   flex-direction: column-reverse;
