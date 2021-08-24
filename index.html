@@ -30,16 +30,16 @@
 
             <div>
                 <a href="#">
-                    <img src="images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid" width="470" height="auto" alt="Logo del sitio">  
+                    <img src="images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
                 </a>
-                <h1 class="animate__animated animate__backInUp">Audiovisuales</h1>
+                <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
             </div>
 
             <nav class="botonera">
 
                 <ul>
-                    <li id="botonQuienesSomos">
-                        <a  href="index.html#quienesSomos"><span class="hoverUnderline">Info</span></a>
+                    <li id="botonBio">
+                        <a  href="index.html#bio"><span class="hoverUnderline">Bio</span></a>
                     </li>
                     <li>
                         <a id="botonGaleria" href="index.html#galeria"><span class="hoverUnderline">Galería</span></a>
@@ -49,6 +49,51 @@
                         <a id="botonPresupuesto" href="index.html#formulario"><span class="hoverUnderline">Contacto</span></a>
                     </li>
                 </ul>
+
+            </nav>
+
+            <nav class="navbar navbar-light bg-light fixed-top">
+
+                <div class="container-fluid">
+
+                  <a class="navbar-brand" href="#">Offcanvas navbar</a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+
+                  </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+
+
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html#bio">Bio</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#galeria">Link</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#formulario">Link</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </nav>
 
@@ -99,17 +144,20 @@
         <!-- FIN CAROUSEL -->
 
         <!-- INICIO SECCIÓN BIO -->
+
+        <div class="bioBanner text-center">
+            <h1>¿Quién Soy?</h1>
+        </div>
     
-        <div class="container-fluid wow animate__animated animate__fadeIn">
+        <div class="container-fluid wow animate__animated animate__fadeIn bio" id="bio">
 
             <div class="row">
                 
-                <div class="col-lg-8 text-center mt-3 mb-5">
+                <div class="col-lg-8 text-center mt-3 mb-5 bioImagen">
                     <img class="img-fluid animate__animated animate__fadeInUp" src="./images/fotosStaff/ImgMatias.jpg" alt="Generic placeholder image" width="370" height="450">
                 </div>
 
-                <div class="col-lg-4 text-center p-5">
-                    <h2 class="mt-2">Yo</h2>
+                <div class="col-lg-4 text-center p-5 bioTexto">
                     <p class="mt-2">Me llamo Matías, pero me dicen Marshall. Me apasiona ver la vida a través de un lente. Me dedico a esto desde hace 10 años y pienso seguir haciéndolo toda la vida. También soy aficionado a los videojuegos con historias profundas y a las hamburguesas completas, sin huevo por favor.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsam sed, voluptas dignissimos eveniet incidunt tenetur, officiis neque velit cumque asperiores quas illo ducimus distinctio sequi? Doloremque possimus iure impedit!</p>
                 </div>
@@ -135,7 +183,7 @@
                 </div>
 
                 <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="images/fotosGaleria/fotoBooks.jpg" data-holder-rendered="true">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" width="500" height="auto" src="images/fotosGaleria/fotoBooks.jpg" data-holder-rendered="true">
                 </div>
 
             </div>
@@ -149,7 +197,7 @@
                 </div>
 
                 <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/bandaRecital.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/bandaRecital.jpg" data-holder-rendered="true" width="500" height="auto">
                 </div>
 
             </div>
@@ -164,7 +212,7 @@
                 </div>
 
                 <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoNaturaleza.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoNaturaleza.jpg" data-holder-rendered="true" width="500" height="auto">
                 </div>
 
             </div>
@@ -179,7 +227,7 @@
                     </div>
 
                     <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoUrbanoV.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoUrbanoV.jpg" data-holder-rendered="true" width="500" height="auto">
 
                 </div>
 

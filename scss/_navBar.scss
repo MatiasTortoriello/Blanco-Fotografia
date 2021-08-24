@@ -2,6 +2,15 @@
 /********************ELEMENTOS DEL NAV*******************************/
 
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
+
+.audiovisuales{
+  font-size: 1.5rem;
+}
+
+.logo{
+  width: 240;
+  height: auto;
+}
 .botonera {
   display: flex;
   flex-direction: column-reverse;
@@ -40,6 +49,11 @@
     
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
   @media only screen and (min-width: 768px) {
+
+    .audiovisuales{
+      font-size: 2rem;
+    }
+
     .botonera {
       display: $d-flex;
       flex-direction: column-reverse;
