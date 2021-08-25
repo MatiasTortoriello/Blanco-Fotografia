@@ -14,7 +14,7 @@ h1 {
     font-weight: 500; 
 }
 p {
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-weight: 200 !important; 
 
 }
@@ -51,8 +51,7 @@ a {
 /****************CAROUSEL**************************/
 
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
-/* #carousel {
-  display: $d-none; } */
+
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
 
   @media only screen and (min-width: 576px) {
@@ -85,23 +84,22 @@ a {
 
   .bio{
     display: $d-flex;
-    flex-direction: row; 
+    flex-direction: row;
+    align-items: center;
+    
   }
 
-  #matias {
-    display: $d-flex;
-    flex-direction: column;
-    border-bottom: solid 2px black;
-    border-top: solid 2px black; }
+  .bioImagen {
+    width: 20vw;
+  }
+ 
   
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
   
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
   /*BREAKPOINT 4: LARGE (lg) >= 992px */
   @media only screen and (min-width: 992px) {
-    #matias {
-      display: $d-flex;
-      flex-direction: row; }
+    
   }
   /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
   /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
@@ -110,38 +108,14 @@ a {
   /********************SECCIÓN GALERÍA*********************************/
  
   /*BREAKPOINT 1: X-SMALL (xs) <576px */
-  .displayGaleria img {
-    width: 100%;
-    border: solid 1px black; }
   
-  .displayGaleria img:hover {
-    box-shadow: inset 0 0 100px black, 0 0 100px rgba(59, 59, 59, 0.671);
-    outline-color: rgba(49, 138, 172, 0);
-    outline-offset: 5rem; }
-
-   /*  .galeria2 {
-
-    } */
-
-    .displayGaleria2 {
-      background-image: url(/images/fotosGaleria/fotoUrbanoV.jpg);
-      width: 100%;
-    }
   
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
   /*BREAKPOINT 4: LARGE (lg) >= 992px */
   
   @media only screen and (min-width: 992px) {
-    .displayGaleria{
-      .col-lg-4{
-        margin: 0 !important;
-        padding: 100px; 
-      }
-      img{
-        width: 100%;
-      }
-    }
+    
   }
   
   /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
@@ -206,11 +180,12 @@ a {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: rgb(28, 111, 219);
+    background-color: rgba(28, 111, 219, 0.897);
     color: white;
     cursor: pointer;
     padding: 15px;
     font-size: 18px;
+    border-radius: 5px solid black;
   }
   
 

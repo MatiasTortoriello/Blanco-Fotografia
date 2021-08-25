@@ -15,21 +15,91 @@
 </head>
     <body>
         <header class="text-center">
-            <nav class="botonera">
+            <div class="navGrande">
                 <div>
                     <a href="#">
-                        <img src="../images/logos/MarshallLogo.png" class="img-fluid" width="470" height="auto" alt="Logo del sitio">
-                        <h1 class="mb-1">Audiovisuales</h1>
+                        <img src="images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
                     </a>
+                    <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
                 </div>
-                <ul>
-                    <li id="botonVolver">
-                        <a  href="../index.html"><span class="hoverUnderline">Volver al inicio</span></a>
-                    </li>
-                </ul>
+
+                <nav class="botonera">
+                    <ul>
+                        <li id="botonBio">
+                            <a  href="index.html#bio"><span class="hoverUnderline">Bio</span></a>
+                        </li>
+                        <li>
+                            <a id="botonGaleria" href="index.html#galeria"><span class="hoverUnderline">Galería</span></a>
+                        </li>
+                        <li>
+                            <a id="botonPresupuesto" href="index.html#formulario"><span class="hoverUnderline">Contacto</span></a>
+                        </li>
+                    </ul>
+
+                </div>
+
             </nav>
+
+            <!-- NAVBAR RESPONSIVE -->
+
+            <nav class="navbar navbar-light bg-light navResponsive">
+
+                <div class="container-fluid">
+                    <div class="logoResponsive">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logos/MarshallLogo.png" class="animate__animated animate__fadeIn img-fluid logoResponsive" width="200" height="auto" alt="">
+                        </a>    
+                        <h1 class="medium wow animate__animated animate__backInUp">Audiovisuales</h1>
+                    </div>
+                  
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+
+                  </button>
+
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        
+                        <div class="offcanvas-header text-center">
+                            <div class="logoResponsive">
+                                <a class="navbar-brand" href="#">
+                                    <img src="images/logos/MarshallLogo.png" class="animate__animated animate__fadeIn img-fluid logoResponsive" width="200" height="auto" alt="">
+                                </a>    
+                                <h1 class="medium wow animate__animated animate__backInUp">Audiovisuales</h1>
+                            </div>
+                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+
+
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html#bio">Bio</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#galeria">Galería</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#formulario">Contacto</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+            <!-- FIN NAVBAR RESPONSIVE -->
+
         </header>
-        <!-- CAROUSEL -->
         
         <section>
 
