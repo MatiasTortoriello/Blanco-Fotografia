@@ -138,13 +138,12 @@ a {
 /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
 /****************CAROUSEL**************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
-/*BREAKPOINT 2: SMALL (sm) >= 576px */
-@media only screen and (min-width: 576px) {
-  #carousel {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    display: block; } }
+#carousel {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: block; }
 
+/*BREAKPOINT 2: SMALL (sm) >= 576px */
 /*BREAKPOINT 3: MEDIUM (md) >= 768px */
 /*BREAKPOINT 4: LARGE (lg) >= 992px */
 /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
@@ -177,45 +176,6 @@ a {
 /*BREAKPOINT 4: LARGE (lg) >= 992px */
 /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
 /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
-/*******************SECCIONES INTERNAS DE LA GALERÍA*********************/
-.galeriaFotos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 5% 10% 5% 10%; }
-  .galeriaFotos div {
-    width: 49%;
-    height: 40vh;
-    margin-bottom: 2%;
-    background-color: rgba(105, 104, 104, 0.555);
-    overflow: hidden; }
-  .galeriaFotos div img {
-    display: block;
-    width: auto;
-    height: 99%;
-    margin: auto;
-    border: solid 2px black; }
-  .galeriaFotos div:nth-child(3n) {
-    /* para cada 3*n elementos article dentro de la clase flex index le aplica esto*/
-    width: 100%;
-    height: 65vh; }
-
-#info {
-  border: solid black 1px;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  #info h1 {
-    margin-top: 1%;
-    text-align: center; }
-    #info h1 p {
-      margin-top: 1%;
-      padding: 1%; }
-
 /* BOTÓN "Volver Arriba" */
 #volverArriba {
   display: none;
@@ -231,6 +191,39 @@ a {
   padding: 15px;
   font-size: 18px;
   border-radius: 5px solid black; }
+
+/*******************SECCIONES INTERNAS DE LA GALERÍA*********************/
+#info {
+  border: solid black 1px;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #info h1 {
+    margin-top: 1%;
+    text-align: center; }
+    #info h1 p {
+      margin-top: 1%;
+      padding: 1%; }
+
+.item {
+  transition: .5s ease-in-out;
+  margin: 1rem;
+  display: block; }
+  .item img {
+    object-fit: cover;
+    border: 5px solid #dad8d8; }
+
+.item:hover {
+  filter: brightness(70%); }
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
 
 /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */
 /*BREAKPOINT 2: SMALL (sm) >= 576px */

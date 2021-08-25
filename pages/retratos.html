@@ -11,53 +11,100 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Marshall Audiovisuales</title>
 </head>
     <body>
         <header class="text-center">
-            <nav class="botonera">
+            <div class="navGrande">
                 <div>
                     <a href="#">
-                        <img src="../images/logos/MarshallLogo.png" class="img-fluid" width="470" height="auto" alt="Logo del sitio">
-                        <h1 class="mb-1">Audiovisuales</h1>
+                        <img src="../images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
                     </a>
+                    <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
                 </div>
-                <ul>
-                    <li id="botonVolver">
-                        <a  href="../index.html"><span class="hoverUnderline">Volver al inicio</span></a>
-                    </li>
-                </ul>
+
+                <nav class="botonera">
+                    <ul>
+                        <li id="botonBio">
+                            <a  href="index.html#bio"><span class="hoverUnderline">Volver al Inicio</span></a>
+                        </li>
+                        
+                    </ul>
+                </div>
             </nav>
         </header>
-        <!-- CAROUSEL -->
-        
-        <section>
 
-            <div id="info" class="descripcionGaleria">
-                <h1>Books de fotos</h1>
-                <p>Esta sección expone trabajos de retratos y escenas con una o más personas como elemento principal de la fotografía. Los book de fotos son muy demandados principalmente por modelos que buscan crear un portfolio profesional, pero también se utilizan a modo de recuerdo antes de un casamiento o cumpleaños de quince.</p>
+        <div class="container-fluid galeria">
+            
+            <div>
+                <div class="item">
+                    <a href="../images/fotosBooks/responsive.jpg" >
+                        <img src="../images/fotosBooks/responsive.jpg" class="img-fluid fancybox" data-fancybox="gallery1" width="450" alt="">
+                    </a>               
+                </div>
             </div>
-    
-            <div class="galeriaFotos">
-                <div>
-                    <img src="../images/fotosBooks/book1.jpg" alt="Luchador de kick-boxing arreglándose el pelo">
+
+            <div>
+                <div class="item">
+                    <a href="../images/fotosBooks/MAT_0025-(4).jpg" >
+                        <img src="../images/fotosBooks/thumb2.jpg" class="img-fluid" width="450" alt="">
+                    </a>               
                 </div>
-    
-                <div>
-                    <img src="../images/fotosBooks/book2.jpg" alt="Chica blandiendo un bate de baseball de forma amenazadora, en blanco y negro">
+            </div>
+
+            <div>
+                <div class="item">
+                    <a href="../images/fotosBooks/MAT_0428.jpg" >
+                        <img src="../images/fotosBooks/thumb2.jpg" class="img-fluid" width="460" alt="">
+                    </a>               
                 </div>
-    
-                <div>
-                    <img src="../images/fotosBooks/book3.jpg" alt="Rockero poniendo su mano en los anteojos negros que lleva puestos">
+            </div>
+
+            <div>
+                <div class="item">
+                    <a href="../images/fotosBooks/MAT_0428.jpg" >
+                        <img src="../images/fotosBooks/MAT_0428.jpg" class="img-fluid" width="460" alt="">
+                    </a>               
                 </div>
-    
-                <div>
-                    <img src="../images/fotosBooks/book4.jpg" alt="Visor de cámara de fotos sacándole una foto a una modelo sentada sobre una mesa, fuera de foco.">
+            </div>
+
+            <div>
+                <div class="item">
+                    <a href="../images/fotosBooks/MAT_0428.jpg" >
+                        <img src="../images/fotosBooks/MAT_0428.jpg" class="img-fluid" width="460" alt="">
+                    </a>               
                 </div>
-                <div></div>
+            </div>
+
+            <div>
+                <div class="item">
+                    <a href="../images/fotosBooks/MAT_0428.jpg" >
+                        <img src="../images/fotosBooks/MAT_0428.jpg" class="img-fluid" width="460" alt="">
+                    </a>               
+                </div>
+            </div>
+
+            <div>
+                <div class="item">
+                    <a href="../images/fotosBooks/MAT_0428.jpg" >
+                        <img src="../images/fotosBooks/MAT_0428.jpg" class="img-fluid" width="460" alt="">
+                    </a>               
+                </div>
+            </div>
+
+            <div>
+                <div class="item">
+                    <a href="../images/fotosBooks/MAT_0428.jpg" >
+                        <img src="../images/fotosBooks/MAT_0428.jpg" class="img-fluid" width="460" alt="">
+                    </a>               
+                </div>
             </div>
             
-        </section>
+        </div>
+        
 
         <!-- FOOTER -->
         <footer class="page-footer font-small blue">
@@ -88,7 +135,8 @@
         </footer>
         <!-- FIN FOOTER -->
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
     </body>
 </html>
