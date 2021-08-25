@@ -83,19 +83,20 @@ a {
 
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 
-
-  .bio{
-    display: $d-flex;
-    flex-direction: row;
-    align-items: center;
-    
+#bio .div-img-bg {
+  padding: 0;
+  .bioImg img{
+    margin-top: 0%;
+    margin-left: calc(0% - 0px);  
   }
+}
 
-  .bioImagen {
-    width: 20vw;
-  }
- 
-  
+#bio .bioTexto .p-heading {
+  font-size: 20px;
+}
+
+
+
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
   
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
@@ -186,6 +187,27 @@ a {
     align-items: center;
     flex-wrap: wrap;
   }
+
+  /* ESTO AHORA VA PA' LAS COPIA' VO'
+
+    img{
+	max-width: 100%;
+}
+.gallery{
+	background-color: #dbddf1;
+	padding: 80px 0;
+}
+.gallery img{
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+#gallery-modal .modal-img{
+	width: 100%;
+}*/
+
 
   /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */  
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
