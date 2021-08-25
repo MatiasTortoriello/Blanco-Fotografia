@@ -5,6 +5,9 @@
 /********************ELEMENTOS DEL NAV*******************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 @import url(animate.css);
+.navGrande {
+  display: none; }
+
 .audiovisuales {
   font-size: 1.5rem; }
 
@@ -43,6 +46,10 @@
 
 /*BREAKPOINT 3: MEDIUM (md) >= 768px */
 @media only screen and (min-width: 768px) {
+  .navGrande {
+    display: block; }
+  .navResponsive {
+    display: none; }
   .audiovisuales {
     font-size: 2rem; }
   .botonera {

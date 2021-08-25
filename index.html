@@ -28,46 +28,53 @@
 
         <header class="text-center">
 
-            <div>
-                <a href="#">
-                    <img src="images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
-                </a>
-                <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
-            </div>
+            <div class="navGrande">
 
-            <nav class="botonera">
+                <div>
+                    <a href="#">
+                        <img src="images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
+                    </a>
+                    <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
+                </div>
 
-                <ul>
-                    <li id="botonBio">
-                        <a  href="index.html#bio"><span class="hoverUnderline">Bio</span></a>
-                    </li>
-                    <li>
-                        <a id="botonGaleria" href="index.html#galeria"><span class="hoverUnderline">Galería</span></a>
-                    </li>
-                
-                    <li>
-                        <a id="botonPresupuesto" href="index.html#formulario"><span class="hoverUnderline">Contacto</span></a>
-                    </li>
-                </ul>
+                <nav class="botonera">
+
+                    <ul>
+                        <li id="botonBio">
+                            <a  href="index.html#bio"><span class="hoverUnderline">Bio</span></a>
+                        </li>
+                        <li>
+                            <a id="botonGaleria" href="index.html#galeria"><span class="hoverUnderline">Galería</span></a>
+                        </li>
+                    
+                        <li>
+                            <a id="botonPresupuesto" href="index.html#formulario"><span class="hoverUnderline">Contacto</span></a>
+                        </li>
+                    </ul>
+
+                </div>
 
             </nav>
 
             <!-- NAVBAR RESPONSIVE -->
 
-            <nav class="navbar navbar-light bg-light fixed-top">
+            <nav class="navbar navbar-light bg-light navResponsive">
 
                 <div class="container-fluid">
-
-                  <a class="navbar-brand" href="#">
-                      <img src="images/logos/MarshallLogo.png" class="animate__animated animate__fadeIn img-fluid logoResponsive" width="250" height="auto" alt="">
-                  </a>
+                    <div class="logoResponsive">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logos/MarshallLogo.png" class="animate__animated animate__fadeIn img-fluid logoResponsive" width="200" height="auto" alt="">
+                        </a>    
+                        <h1 class="medium wow animate__animated animate__backInUp">Audiovisuales</h1>
+                    </div>
+                  
 
                   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
 
                   </button>
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         
                         <div class="offcanvas-header">
                             <img src="images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logoResponsive" width="250" height="auto" alt="">
@@ -105,7 +112,7 @@
         </header>
 
         <!-- BOTÓN "VOLVER ARRIBA" -->
-        <button onclick="topFunction()" id="volverArriba" title="Go to top">Volver arriba</button>
+        <button onclick="topFunction()" id="volverArriba" title="Go to top">↑</button>
         <!-- FIN BOTÓN "VOLVER ARRIBA" -->
 
         <!-- CAROUSEL -->
@@ -198,7 +205,7 @@
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading">Recitales /<span class="text-muted"> Imágenes que se pueden oír.</span></h2>
 
-                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <p>La fotografía forma una parte fundamental en los eventos culturales. Desde recitales hasta muestras artísticas de todos los niveles. Una práctica muy común en los últimos tiempos es también la de crear videoclips dentro de los estudios de grabación de las bandas de música.</p>
                 </div>
 
                 <div class="col-md-5 order-md-1">
@@ -213,7 +220,7 @@
 
                     <h2 class="featurette-heading">Fotografía de naturaleza /<span class="text-muted"> La Madre tierra en HD.</span></h2>
 
-                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <p>Además del enorme potencial artístico que tiene el capturar la belleza e imponencia de los paisajes y los detalles llenos de vida que ofrece la naturaleza, este tipo de fotografía es muy importante a la hora de vender parajes naturales para atraer al turismo a zonas que, de otro modo, sólo conocerían a través de palabras.</p>
                 </div>
 
                 <div class="col-md-5">
@@ -228,7 +235,7 @@
 
                     <h2 class="featurette-heading">Fotografía urbana /<span class="text-muted"> Arte sobre cemento.</span></h2>
 
-                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <p>Al igual que la fotografía de la naturaleza, la urbana pretende plasmar de forma audiovisual la belleza que pueden tener las ciudades alrededor del mundo. Esta disciplina está muy emparejada con los book de fotos, ya que la temática urbana (estética y locación) ganó muchos adeptos en los últimos años.</p>
                     </div>
 
                     <div class="col-md-5 order-md-1">
