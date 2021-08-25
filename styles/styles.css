@@ -156,11 +156,37 @@ a {
 /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
 /************************SECCIÓN BIO******************************/
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
+.paddsection {
+  padding-top: 90px;
+  padding-bottom: 90px; }
+
+.paddsections {
+  padding-top: 90px;
+  padding-bottom: 90px !important; }
+
+#bio {
+  width: 100%;
+  height: auto;
+  background: #eeeeee;
+  padding-top: 120px; }
+  #bio .div-img-bg {
+    padding-bottom: 30px;
+    border: 20px solid rgba(0, 0, 0, 0.4); }
+
 #bio .div-img-bg {
   padding: 0; }
   #bio .div-img-bg .bioImg img {
     margin-top: 0%;
     margin-left: calc(0% - 0px); }
+
+#bio .div-img-bg .bioImg img {
+  width: 100%;
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0);
+  margin-top: -60px;
+  margin-left: 40px;
+  height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 #bio .bioTexto .p-heading {
   font-size: 20px; }
