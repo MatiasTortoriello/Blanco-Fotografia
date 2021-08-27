@@ -85,38 +85,21 @@ a {
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 
 
-.paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.paddsections {
-  padding-top: 90px;
-  padding-bottom: 90px !important;
-}
 
 #bio{
   width: 100%;
   height: auto;
   background: #eeeeee;
   padding-top: 120px;
+  padding-bottom: 90px;
   .div-img-bg{
     padding-bottom: 30px;
     border: 20px solid rgba(0, 0, 0, 0.4);
   }
 }
 
-#bio .div-img-bg {
-  padding: 0;
-  .bioImg img{
-    margin-top: 0%;
-    margin-left: calc(0% - 0px);  
-  }
-}
-
 #bio .div-img-bg .bioImg img {
   width: 100%;
-  
   margin-top: -60px;
   margin-left: 40px;
   height: 400px;
@@ -128,11 +111,12 @@ a {
   font-size: 20px;
 }
 
-
-
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
   
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
+
+
+  
   /*BREAKPOINT 4: LARGE (lg) >= 992px */
   @media only screen and (min-width: 992px) {
     
@@ -184,15 +168,12 @@ a {
 
   .item{
     transition: .5s ease-in-out;
-  }
-  .item:hover{
-    filter: brightness(80%);
+    :hover{
+      filter:brightness(80%)
+    }
   }
   
  
-
-  
-
 
   /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */  
   /*BREAKPOINT 2: SMALL (sm) >= 576px */

@@ -1,67 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../styles/styles.css">
-    <script src="./script/wow.min.js"></script>
-    <script src="./script/wow.js"></script>
-    <title>Marshall Audiovisuales</title>
-</head>
-    <body>
-        <header class="text-center">
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <header class="text-center">
+        <div>
             <div>
-                <div>
-                    <a href="#">
-                        <img src="../images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
-                    </a>
-                    <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
-                </div>
-
-                <nav class="botonera">
-                    <ul>
-                        <li>
-                            <a  href="/index.html"><span class="hoverUnderline">Volver al Inicio</span></a>
-                        </li>
-                    </ul>
-                </nav>
+                <a href="#">
+                    <img src="../images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
+                </a>
+                <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
             </div>
-        </header>
 
-            <div class="container-fluid galeria">
-            
-                <div>
-                    <div class="item">
-                        <a href="../images/fotosBooks/responsive.jpg" >
-                            <img src="../images/fotosBooks/responsive.jpg" class="img-fluid fancybox" data-fancybox="gallery1" width="450" alt="">
-                        </a>               
-                    </div>
-                </div>
+            <nav class="botonera">
+                <ul>
+                    <li>
+                        <a  href="/index.html"><span class="hoverUnderline">Volver al Inicio</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
-                <div>
-                    <div class="item">
-                        <a href="../images/fotosBooks/MAT_0025-(4).jpg" >
-                            <img src="../images/fotosBooks/thumb2.jpg" class="img-fluid" width="450" alt="">
-                        </a>               
-                    </div>
-                </div>
-    
-                <div>
-                    <div class="item">
-                        <a href="../images/fotosBooks/MAT_0428.jpg" >
-                            <img src="../images/fotosBooks/thumb2.jpg" class="img-fluid" width="460" alt="">
-                        </a>               
-                    </div>
-                </div>
-                
-            </div>
+    <div class="container-fluid galeria">
+
+        <div class="row mt-4">
+          
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="/images/fotosBooks/book4.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="/images/fotosBooks/thumb2.jpg" width="100%" height="100%">
+            </a>
+          </div>
+      
+         <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="img2.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="img2.jpg" width="100%" height="100%">
+            </a>
+          </div>
+      
+         <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="img3.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="img3.jpg" width="100%" height="100%">
+            </a>
+          </div>
+      
+         <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="img4.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="img4.jpg" width="100%" height="100%">
+            </a>
+          </div>
+      
+         <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="img5.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="img5.jpg" width="100%" height="100%">
+            </a>
+          </div>
+      
+         <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="img6.jpg" class="fancybox" data-fancybox="gallery1">
+              <img src="img6.jpg" width="100%" height="100%">
+            </a>
+          </div>
+      
+        </div>
+         
+       </div>
 
         <!-- FOOTER -->
         <footer class="page-footer font-small blue">
@@ -92,8 +111,17 @@
         </footer>
         <!-- FIN FOOTER -->
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-            <script src="./script/wow.min.js"></script>
-            <script src="./script/wow.js"></script>
-    </body>
+  
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+    <!-- jQuery -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+  </body>
 </html>
