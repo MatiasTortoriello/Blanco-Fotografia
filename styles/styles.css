@@ -193,7 +193,9 @@ a {
 
 /*******************SECCIONES INTERNAS DE LA GALERÍA*********************/
 .item {
-  transition: .5s ease-in-out; }
+  transition: 1s; }
+  .item img {
+    border: 5px solid black; }
   .item :hover {
     filter: brightness(80%); }
 

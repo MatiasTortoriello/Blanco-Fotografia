@@ -45,8 +45,6 @@ a {
 
 /****************CAROUSEL******************/
 
-
-
 #carousel {
   border-top: 10px solid black;
   border-bottom: 10px solid black;
@@ -125,7 +123,11 @@ a {
   /*******************SECCIONES INTERNAS DE LA GALERÍA*********************/
 
   .item{
-    transition: .5s ease-in-out;
+    transition: 1s;
+    
+    img{
+    border: 5px solid black;  
+    }
     :hover{
       filter:brightness(80%)
     }
