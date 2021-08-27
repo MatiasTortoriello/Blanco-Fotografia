@@ -6,7 +6,7 @@ boton = document.getElementById("volverArriba");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     boton.style.display = "block";
   } else {
     boton.style.display = "none";
