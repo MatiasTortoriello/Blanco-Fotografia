@@ -1,48 +1,49 @@
-
 /*************************ETIQUETAS GENERALES************************/
-
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box; 
-    }
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; 
+}
   
 body {
-    font-family: $fontMain;
+  font-family: $fontMain;
 }
-h1 {
-    font-weight: 500; 
-}
-p {
-    /* font-size: 1rem; */
-    font-weight: 200 !important; 
 
+h1 {
+  font-weight: 500; 
 }
+
+p {
+  /* font-size: 1rem; */
+  font-weight: 200 !important;
+}
+
 a {
-    color: black;
-    text-decoration: wavy;
-    font-style: oblique; 
+  color: black;
+  text-decoration: wavy;
+  font-style: oblique; 
 }
 
 @media only screen and (min-width: 768px) {
     h1 {
-        font-weight: 500; 
+      font-weight: 500; 
     }
     p {
-        font-weight: 750; 
+      font-weight: 750; 
     }
 }
   
 @media only screen and (min-width: 992px) {
-    h1 {
-        font-weight: 700;
-        font-size: 1.7rem; }
-    p {
-        font-weight: 550;
-        font-size: 1.2rem; }
+  h1 {
+    font-weight: 700;
+    font-size: 1.7rem; 
+  }
+  p {
+    font-weight: 550;
+    font-size: 1.2rem; }
 }  
 
-/****************CAROUSEL**************************/
+/****************CAROUSEL******************/
 
 
 
