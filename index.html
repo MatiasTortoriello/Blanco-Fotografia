@@ -24,12 +24,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="./styles/animate.css">
 
-    
         <title>Marshall Audiovisuales</title>
 
     </head>
 
     <body>
+        <!-- NAVBAR -->
         <header class="text-center">
             <div class="navGrande">
                 <div>
@@ -53,6 +53,7 @@
                     </ul>
                 </div>
             </nav>
+            <!-- FIN NAVBAR -->
 
             <!-- NAVBAR RESPONSIVE -->
 
@@ -74,7 +75,7 @@
                     <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         
                         <div class="offcanvas-header">
-                            <img src="images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logoResponsive" width="250" height="auto" alt="">
+                            <img src="images/logos/logoTransparente.png" class="animate__animated animate__backInDown img-fluid logoResponsive" width="250" height="auto" alt="">
                             <a type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></a>
                         </div>
 
@@ -82,7 +83,7 @@
                             
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html#bio">Bio</a>
+                                    <a class="nav-link" data-bs-target="offcanvas" href="index.html#bio">Bio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.html#galeria">Galería</a>
@@ -102,13 +103,11 @@
             <!-- FIN NAVBAR RESPONSIVE -->
 
         </header>
-        <!-- BOTÓN "VOLVER ARRIBA" -->
-        <button onclick="topFunction()" id="volverArriba" title="Go to top">↑</button>
-        <!-- FIN BOTÓN "VOLVER ARRIBA" -->
+
         <!-- CAROUSEL -->
         <section id="carousel" class="w-100">
             
-            <div id="ejemplocarousel" class="carousel slide carousel-fade pointer-event" data-bs-ride="carousel" data-interval="100">
+            <div id="carouselItem" class="carousel slide carousel-fade pointer-event" data-bs-ride="carousel" data-interval="100">
 
                 <div class="carousel-inner">
                 
@@ -130,12 +129,12 @@
 
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#ejemplocarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselItem" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 
-                <button class="carousel-control-next" type="button" data-bs-target="#ejemplocarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselItem" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -145,34 +144,29 @@
         </section>
         <!-- FIN CAROUSEL -->
 
-        <hr class="solid">
-
-        <!-- INICIO QUOTE -->
-        <div class="container">
-
-        </div>
-            
-        <!-- FIN QUOTE -->
-
-        <hr class="solid">
-
         <!-- INICIO SECCIÓN BIO -->
+        <hr class="solid"  id="bio">
+        <div class="col-12 bg-dark text-center text-white p-3">
+            <div class="row">
+                <h2>¿Quién soy?</h2>
+            </div>
+        </div>
+        <hr class="solid mb-5">
       
-        <div id="bio" class="paddsection container-fluid wow animate__animated animate__fadeIn">
+        <div class="container-fluid wow animate__animated animate__fadeIn bio">
             <div class="container">
               <div class="row justify-content-between">
                 <div class="col-lg-4 ">
                   <div class="div-img-bg">
                     <div class="bioImg text-center">
-                        <img class="img-fluid animate__animated animate__fadeInUp" src="./images/fotosStaff/ImgMatias.jpg" alt="Generic placeholder image" width="370" height="450">
+                        <img class="img-fluid animate__animated animate__fadeInUp" src="./images//Matías.jpg" alt="Generic placeholder image" width="370" height="450">
                     </div>
                   </div>
                 </div>
 
                 <div class="col-lg-7">
                   <div class="about-descr bioTexto">
-                    <h2 class="text-center">¿Quién soy?</h2>
-                    <p class="">Me llamo Matías, pero me dicen Marshall. Me apasiona ver la vida a través de un lente. Me dedico a esto desde hace 10 años y pienso seguir haciéndolo toda la vida. También soy aficionado a los videojuegos con historias profundas y a las hamburguesas completas, sin huevo por favor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsam sed, voluptas dignissimos eveniet incidunt tenetur, officiis neque velit cumque asperiores quas illo ducimus distinctio sequi? Doloremque possimus iure impedit!</p>
+                    <p>Me llamo Matías, pero me dicen Marshall. Me apasiona ver la vida a través de un lente. Me dedico a esto desde hace 10 años y pienso seguir haciéndolo toda la vida. También soy aficionado a los videojuegos con historias profundas y a las hamburguesas completas, sin huevo por favor.</p>
                   </div>
                 </div>
               </div>
@@ -181,7 +175,12 @@
         <!-- FIN SECCIÓN BIO -->
 
         <hr class="solid" id="galeria">
-
+        <div class="col-12 bg-dark text-center text-white p-3">
+            <div class="row">
+                <h2>Galería</h2>
+            </div>
+        </div>
+        <hr class="solid mb-5">
 
         <!-- GALERIA -->
         <div class="container">
@@ -194,11 +193,13 @@
                     
                     <p>Esta sección expone trabajos de retratos y escenas con una o más personas como elemento principal de la fotografía. Los retratos pueden ir desde una variante artística, a una informativa/periodística. Los book de fotos son una rama del retrato comercial, y se encuentran muy demandados, principalmente por modelos que buscan crear un portfolio profesional, pero también se utilizan a modo de recuerdo antes de un casamiento o cumpleaños de quince.</p>
 
-                    <a href="pages/retratos.html">
-                        <h3 class="medium">
-                            <strong>Ver Galería</strong>    
-                        </h3>    
-                    </a>
+                    <div class="botonGaleria">
+                        <a href="pages/retratos.html">
+                            <button class="btn-dark p-1">
+                                <h3>Ver Galería</h3>
+                            </button>
+                        </a>
+                    </div>
                     
                 </div>
 
@@ -208,7 +209,7 @@
 
             </div>
             <!-- FIN GALERIA RETRATOS -->
-
+            <hr class="solid">
             <!-- GALERIA CULTURALES -->
             <div class="row wow animate__animated animate__fadeInUp animate__slower mb-5">
 
@@ -217,11 +218,13 @@
 
                     <p>La fotografía forma una parte fundamental en los eventos culturales. Desde recitales hasta muestras artísticas de todos los niveles. Una práctica muy común en los últimos tiempos es también la de crear videoclips dentro de los estudios de grabación de las bandas de música.</p>
 
-                    <a href="/pages/culturales.html">
-                        <h3 class="medium">
-                            <strong>Ver Galería</strong>    
-                        </h3>    
-                    </a>
+                    <div class="botonGaleria">
+                        <a href="pages/culturales.html">
+                            <button class="btn-dark p-1">
+                                <h3>Ver Galería</h3>
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="col-md-5 order-md-1">
@@ -230,7 +233,7 @@
 
             </div>
             <!-- FIN GALERIA CULTURALES -->
-
+            <hr class="solid">
             <!-- GALERIA NATURALEZA -->
 
             <div class="row featurette wow animate__animated animate__fadeInUp animate__slower mb-5">
@@ -241,11 +244,13 @@
 
                     <p>Además del enorme potencial artístico que tiene el capturar la belleza e imponencia de los paisajes y los detalles llenos de vida que ofrece la naturaleza, este tipo de fotografía es muy importante a la hora de vender parajes naturales para atraer al turismo a zonas que, de otro modo, sólo conocerían a través de palabras.</p>
 
-                    <a href="./pages/naturaleza.html">
-                        <h3 class="medium">
-                            <strong>Ver Galería</strong>    
-                        </h3>    
-                    </a>
+                    <div class="botonGaleria">
+                        <a href="pages/naturaleza.html">
+                            <button class="btn-dark p-1">
+                                <h3>Ver Galería</h3>
+                            </button>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -256,7 +261,7 @@
             </div>
 
             <!-- FIN GALERIA NATURALEZA -->
-
+            <hr class="solid">
             <!-- GALERIA URBANO -->
 
             <div class="row featurette wow animate__animated animate__fadeInUp animate__slower mb-5">
@@ -267,11 +272,13 @@
 
                     <p>Al igual que la fotografía de la naturaleza, la urbana pretende plasmar de forma audiovisual la belleza que pueden tener las ciudades alrededor del mundo. Esta disciplina está muy emparejada con los book de fotos, ya que la temática urbana (estética y locación) ganó muchos adeptos en los últimos años.</p>
 
-                    <a href="../pages/urbano.html">
-                        <h3 class="medium">
-                            <strong>Ver Galería</strong>    
-                        </h3>    
-                    </a>
+                    <div class="botonGaleria">
+                        <a href="pages/urbano.html">
+                            <button class="btn-dark p-1">
+                                <h3>Ver Galería</h3>
+                            </button>
+                        </a>
+                    </div>
                     </div>
 
                     <div class="col-md-5 order-md-1">
@@ -280,12 +287,10 @@
                 </div>
 
             </div>
-
+            <!-- FIN GALERIA URBANO -->
         </div>
-        <!-- FIN GALERIA URBANO -->
-
         <!-- FIN GALERIA -->
-
+        <hr class="solid">
         <!-- INICIO FORMULARIO -->
         <section class="container-fluid bg-dark" id="formulario">
 
@@ -349,6 +354,10 @@
     
         </footer>
         <!-- FIN FOOTER -->
+
+        <!-- BOTÓN "VOLVER ARRIBA" -->
+        <button onclick="topFunction()" id="volverArriba" title="Go to top">↑</button>
+        <!-- FIN BOTÓN "VOLVER ARRIBA" -->
 
         <!-- LINKS JS -->
 

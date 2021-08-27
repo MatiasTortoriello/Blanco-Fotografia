@@ -1,7 +1,6 @@
 
 /*************************ETIQUETAS GENERALES************************/
 
-/*BREAKPOINT 1: X-SMALL (xs) <576px */
 * {
     margin: 0%;
     padding: 0%;
@@ -9,7 +8,7 @@
     }
   
 body {
-    font-family: $fontMain; 
+    font-family: $fontMain;
 }
 h1 {
     font-weight: 500; 
@@ -24,10 +23,7 @@ a {
     text-decoration: wavy;
     font-style: oblique; 
 }
-  
-  /*BREAKPOINT 2: SMALL (sm) >= 576px */
 
-  /*BREAKPOINT 3: MEDIUM (md) >= 768px */
 @media only screen and (min-width: 768px) {
     h1 {
         font-weight: 500; 
@@ -37,7 +33,6 @@ a {
     }
 }
   
-  /*BREAKPOINT 4: LARGE (lg) >= 992px */
 @media only screen and (min-width: 992px) {
     h1 {
         font-weight: 700;
@@ -46,81 +41,38 @@ a {
         font-weight: 550;
         font-size: 1.2rem; }
 }  
-/*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
-/*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
 
 /****************CAROUSEL**************************/
 
-/*BREAKPOINT 1: X-SMALL (xs) <576px */
+
 
 #carousel {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  display: block; 
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  display: block;
 } 
-
-  /*BREAKPOINT 2: SMALL (sm) >= 576px */
-
-  @media only screen and (min-width: 576px) {
-    
-  }
-
-  /*BREAKPOINT 3: MEDIUM (md) >= 768px */
-  /*BREAKPOINT 4: LARGE (lg) >= 992px */
-  /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
-  /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
-  /*BREAKPOINT 1: X-SMALL (xs) <576px */
-  /*BREAKPOINT 2: SMALL (sm) >= 576px */
-  /*BREAKPOINT 3: MEDIUM (md) >= 768px */
-  /*BREAKPOINT 4: LARGE (lg) >= 992px */
-  /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
-  /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
-
-
-
 
 /************************SECCIÓN BIO******************************/
 
 
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 
-
-
-#bio{
+.bio{
   width: 100%;
   height: auto;
-  background: #eeeeee;
-  padding-top: 120px;
+  background: #ffffff;
+  padding-top: 30px;
   padding-bottom: 90px;
-  .div-img-bg{
-    padding-bottom: 30px;
-    border: 20px solid rgba(0, 0, 0, 0.4);
+  img{
+    margin-bottom: 20px;
+    border: 5px black solid;
+    box-shadow: -20px 20px 20px 1px rgb(38, 39, 39);
   }
-}
-
-#bio .div-img-bg .bioImg img {
-  width: 100%;
-  margin-top: -60px;
-  margin-left: 40px;
-  height: 400px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-#bio .bioTexto .p-heading {
-  font-size: 20px;
 }
 
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
-  
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
-
-
-  
   /*BREAKPOINT 4: LARGE (lg) >= 992px */
-  @media only screen and (min-width: 992px) {
-    
-  }
   /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
   /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
   
@@ -128,16 +80,21 @@ a {
   /********************SECCIÓN GALERÍA*********************************/
  
   /*BREAKPOINT 1: X-SMALL (xs) <576px */
-  
-  
+  .botonGaleria{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    button{
+      margin-bottom: 15px;
+      h3{
+        font-size: 1.5rem;
+        margin: 5px;
+      }
+    }
+  }
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
   /*BREAKPOINT 4: LARGE (lg) >= 992px */
-  
-  @media only screen and (min-width: 992px) {
-    
-  }
-  
   /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
   /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
   
