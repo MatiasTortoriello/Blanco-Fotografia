@@ -7,7 +7,6 @@
 
 .navGrande{
   display: none;
-  
 }
 
 .audiovisuales{
@@ -39,6 +38,12 @@
     }            
   }
 }
+
+
+.offcanvas-top{
+  height: 45%;
+}
+
 
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
   @media only screen and (min-width: 576px) {
