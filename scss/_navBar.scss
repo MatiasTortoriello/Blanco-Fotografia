@@ -3,8 +3,11 @@
 
 /*BREAKPOINT 1: X-SMALL (xs) <576px */
 
+
+
 .navGrande{
   display: none;
+  
 }
 
 .audiovisuales{
@@ -16,6 +19,7 @@
   height: auto;
 }
 .botonera {
+  
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-evenly;
