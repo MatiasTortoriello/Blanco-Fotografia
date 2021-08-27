@@ -195,7 +195,8 @@ a {
 .item {
   transition: 1s; }
   .item img {
-    border: 5px solid black; }
+    border: 5px solid black;
+    box-shadow: -5px 5px 5px 1px #262727; }
   .item :hover {
     filter: brightness(80%); }
 

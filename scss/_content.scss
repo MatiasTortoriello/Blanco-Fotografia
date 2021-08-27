@@ -124,15 +124,14 @@ a {
 
   .item{
     transition: 1s;
-    
     img{
-    border: 5px solid black;  
+    border: 5px solid black;
+    box-shadow: -5px 5px 5px 1px rgb(38, 39, 39); 
     }
     :hover{
-      filter:brightness(80%)
+      filter:brightness(80%);
     }
   }
-  
  
 
   /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */  
