@@ -3,10 +3,12 @@
   <head>
 
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio de fotógrafo/filmmaker en Zona Oeste, Buenos Aires">
-    <meta name="keywords" content="foto, fotografia, video, filmmaker, produccion audiovisual, productor, audiovisuales, eventos sociales, videoclips, bandas en vivo, fotografía artística, books de fotos, quinceañeras, bodas, bautismos, videos institucionales">
-    
+    <meta name="keywords" content="fotos de recitales, eventos culturales, ferias, show, fotografia de bandas, videoclips, bandas en vivo, fotos en escenarios, fotos en estudio de grabación">
+    <meta name="author" content="Matías Tortoriello">
+
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         
@@ -21,28 +23,30 @@
     <!-- CSS LOCAL -->
     <link rel="stylesheet" href="../styles/styles.css">
 
+    <!-- ANIMACIONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../styles/animate.css">
 
     <title>Marshall Audiovisuales - Eventos Culturales</title>
   </head>
   <body>
 
     <header class="text-center">
+      <div>
         <div>
-            <div>
-                <a href="#">
-                    <img src="../images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
-                </a>
-                <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
-            </div>
-
-            <nav class="botonera">
-                <ul>
-                    <li>
-                        <a  href="/index.html"><span class="hoverUnderline">Volver al Inicio</span></a>
-                    </li>
-                </ul>
-            </nav>
+          <a href="/index.html">
+              <img src="../images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
+          </a>
+          <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
         </div>
+        <nav class="botonera">
+            <ul>
+                <li>
+                    <a  href="/index.html"><span class="hoverUnderline">Volver al Inicio</span></a>
+                </li>
+            </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="container-fluid galeria">
@@ -87,7 +91,7 @@
       
         </div>
          
-       </div>
+      </div>
 
         <!-- FOOTER -->
         <footer class="page-footer font-small blue">
@@ -125,15 +129,28 @@
         </footer>
         <!-- FIN FOOTER -->
 
-    <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    
-    <!-- jQuery -->
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- BOTÓN "VOLVER ARRIBA" -->
+        <button onclick="topFunction()" id="volverArriba" title="Go to top">↑</button>
+            
+        <!-- LINKS JS -->
 
-    <!-- Fancybox -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        
+        <!-- JS LOCAL -->
+        <script src="../script/script.js"></script>
+        
+        <!-- jQuery -->
+        <script src="../node_modules/jquery/dist/jquery.min.js"> </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Fancybox -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+        <!-- ANIMACIONES -->
+        <script src="../script/wow.min.js"></script>
+        <script src="../script/wow.js"></script>
+        <script> new WOW().init(); </script>
 
   </body>
 </html>
