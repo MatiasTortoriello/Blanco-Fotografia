@@ -30,6 +30,7 @@
     </head>
 
     <body>  
+
         <!-- NAVBAR -->
         <header class="text-center">
 
@@ -44,19 +45,28 @@
 
                 <nav class="botonera">
                     <ul>
+
                         <li id="botonBio">
                             <a  href="index.html#bio"><span class="hoverUnderline">Bio</span></a>
                         </li>
+
                         <li>
                             <a id="botonGaleria" href="index.html#galeria"><span class="hoverUnderline">Galería</span></a>
                         </li>
+
+                        <li>
+                            <a id="botonVideos" href="index.html#videos"><span class="hoverUnderline">Videos</span></a>
+                        </li>
+
                         <li>
                             <a id="botonPresupuesto" href="index.html#formulario"><span class="hoverUnderline">Contacto</span></a>
                         </li>
+                        
                     </ul>
                 </nav>
 
             </div>
+
             <!-- FIN NAVBAR -->
 
             <!-- NAVBAR RESPONSIVE -->
@@ -72,7 +82,7 @@
                         <h1 class="medium wow animate__animated animate__backInUp">Audiovisuales</h1>
                     </div>
                   
-                    <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </a>
 
@@ -92,6 +102,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.html#galeria">Galería</a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#videos">Videos</a>
+                                </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.html#formulario">Contacto</a>
                                 </li>
@@ -104,6 +119,7 @@
                 </div>
                 
             </nav>
+
             <!-- FIN NAVBAR RESPONSIVE -->
         </header>
         <!-- CAROUSEL -->
@@ -148,15 +164,15 @@
 
         <!-- QUOTE -->
         <section class="container-fluid">
-            <div class="p-5">
-                <p>“El componente más importante de una cámara está detrás de ella”.</p>
-                <h5 class="ms-5">-Ansel Adams.</h5>
+            <div class="p-5 text-center">
+                <p class="mt-5"><em>“El componente más importante de una cámara está detrás de ella”.</em></p>
+                <h5 class="ms-5 mb-5">-Ansel Adams.</h5>
             </div>
         </section>
         <!-- FIN QUOTE -->
 
         <!-- INICIO SECCIÓN BIO -->
-        <hr class="solid"  id="bio">
+        <hr class="solid mt-5"  id="bio">
 
         <div class="col-12 bg-dark text-center text-white p-3">
             <div class="row">
@@ -213,7 +229,7 @@
 
                 </div>
 
-                <div class="botonGaleria">
+                <div class="botonGaleria mt-5">
                         <a href="pages/retratos.html">
                             <button class="btn-dark p-1">
                                 <h3>Ver Galería</h3>
@@ -239,7 +255,7 @@
                     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/bandaRecital.jpg" data-holder-rendered="true" width="500" height="auto">
                 </div>
 
-                <div class="botonGaleria order-md-2">
+                <div class="botonGaleria order-md-2 mt-5">
                     <a href="pages/culturales.html">
                         <button class="btn-dark p-1">
                             <h3>Ver Galería</h3>
@@ -266,7 +282,7 @@
                     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoNaturaleza.jpg" data-holder-rendered="true" width="500" height="auto">
                 </div>
 
-                <div class="botonGaleria">
+                <div class="botonGaleria mt-5">
                     <a href="pages/naturaleza.html">
                         <button class="btn-dark p-1">
                             <h3>Ver Galería</h3>
@@ -280,18 +296,18 @@
             <hr class="solid">
             <!-- GALERIA URBANO -->
 
-            <section class="row featurette wow animate__animated animate__fadeInUp animate__slower mb-5">
+            <section class="row wow animate__animated animate__fadeInUp animate__slower mb-5">
 
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Fotografía urbana /<span class="text-muted"> Arte sobre cemento.</span></h2>
+                    <h2>Fotografía urbana /<span class="text-muted"> Arte sobre cemento.</span></h2>
                     <p>Al igual que la fotografía de la naturaleza, la urbana pretende plasmar de forma audiovisual la belleza que pueden tener las ciudades alrededor del mundo. Esta disciplina está muy emparejada con los book de fotos, ya que la temática urbana (estética y locación) ganó muchos adeptos en los últimos años.</p>
                 </div>
 
                 <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoUrbanoV.jpg" data-holder-rendered="true" width="500" height="auto">
+                    <img class="img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoUrbanoV.jpg" data-holder-rendered="true" width="500" height="auto">
                 </div>
 
-                <div class="botonGaleria order-md-2">
+                <div class="botonGaleria order-md-2 mt-5">
                     <a href="pages/urbano.html">
                         <button class="btn-dark p-1">
                             <h3>Ver Galería</h3>
@@ -301,39 +317,44 @@
 
             </section>
             <!-- FIN GALERIA URBANO -->
+            <hr class="solid">
+            <!-- GALERIA VIDEOS -->
+
+            <section class="container">
+
+                <section class="row wow animate__animated animate__fadeInUp animate__slower text-center">
+                    <h2>Videos /<span class="text-muted"> Historias en 16:9</span></h2>
+                    <div class="col-md-12 text-center">
+                        <p>Los videos no son más que "fotos en movimiento", la mayoría de los conceptos aplicados en la fotogrfía se aplican en filmografía. Este tipo de trabajos audiovisuales pueden conllevar el montaje de un videoclip musical, un video institucional, un backstage de book de fotos o un sencillo cortometraje.</p>
+                        <p>Sin embargo, en mis trabajos, cada vez que filmo, siento que estoy relatando una historia. Los elementos que incluyo no son más que pequeñas muestras gráficas de todo un mundo que se encuentra detrás de las imágenes que logro capturar. Por eso me gusta mostrar mis videos relatando el transfondo de cada uno de ellos.
+                        </p>
+                    </div>
+
+                </section>
+
+                <section class="row wow animate__animated animate__fadeInUp animate__slower text-center">       
+
+                    <div class="col-md-12">
+                        <img class="img-fluid mx-auto" alt="500x500" src="images/logos/bannerVideos.jpg" data-holder-rendered="true">
+                    </div>
+
+                    <div class="botonGaleria">
+                        <a href="pages/urbano.html">
+                            <button class="btn-dark p-1">
+                                <h3>Ver Galería</h3>
+                            </button>
+                        </a>
+                    </div>
+
+            </section> 
+            
+
+        </section>
+        <!-- FIN GALERIA VIDEOS -->
+
         </section>
         <!-- FIN GALERIA -->
-        <hr class="solid">
-        <!-- GALERIA VIDEOS -->
-
-        <section class="container">
-
-            <section class="row featurette wow animate__animated animate__fadeInUp animate__slower mb-5">
-
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Fotografía urbana /<span class="text-muted"> Arte sobre cemento.</span></h2>
-                    <p>Al igual que la fotografía de la naturaleza, la urbana pretende plasmar de forma audiovisual la belleza que pueden tener las ciudades alrededor del mundo. Esta disciplina está muy emparejada con los book de fotos, ya que la temática urbana (estética y locación) ganó muchos adeptos en los últimos años.</p>
-                </div>
-
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoUrbanoV.jpg" data-holder-rendered="true" width="500" height="auto">
-                </div>
-
-                <div class="botonGaleria order-md-2">
-                    <a href="pages/urbano.html">
-                        <button class="btn-dark p-1">
-                            <h3>Ver Galería</h3>
-                        </button>
-                    </a>
-                </div>
-
-            </section>
-
-        </section>
-
-
-        
-        <!-- FIN GALERIA VIDEOS -->
+    
         <!-- INICIO FORMULARIO -->
         <section class="container-fluid bg-dark" id="formulario">
 
