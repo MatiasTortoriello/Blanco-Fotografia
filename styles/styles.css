@@ -170,6 +170,9 @@ a {
       font-size: 1.5rem;
       margin: 5px; }
 
+.imgGaleria {
+  box-shadow: -20px 20px 30px 1px #262727; }
+
 /*BREAKPOINT 2: SMALL (sm) >= 576px */
 /*BREAKPOINT 3: MEDIUM (md) >= 768px */
 /*BREAKPOINT 4: LARGE (lg) >= 992px */
