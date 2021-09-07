@@ -32,135 +32,161 @@
 
     <body>
 
-        <header class="text-center">
-        <div>
+       <!-- NAVBAR -->
+
+       <header class="text-center">
+
+        <div class="navGrande">
             <div>
-            <a href="/index.html">
-                <img src="../images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
-            </a>
-            <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
+                <a href="#">
+                    <img src="../images/logos/MarshallLogo.png" class="animate__animated animate__backInDown img-fluid logo" width="470" height="auto" alt="Logo del sitio">  
+                </a>
+                <h1 class="animate__animated animate__backInUp audiovisuales">Audiovisuales</h1>
             </div>
+
             <nav class="botonera">
+
                 <ul>
-                    <li>
-                        <a  href="/index.html"><span class="hoverUnderline">Volver al Inicio</span></a>
+
+                    <li id="botonBio">
+                        <a  href="index.html#bio"><span class="hoverUnderline">Bio</span></a>
                     </li>
+
+                    <li>
+                        <a id="botonGaleria" href="index.html#galeria"><span class="hoverUnderline">Galería</span></a>
+                    </li>
+                
+                    <li>
+                        <a id="botonPresupuesto" href="index.html#formulario"><span class="hoverUnderline">Contacto</span></a>
+                    </li>
+
                 </ul>
+
             </nav>
         </div>
-        </header>
+
+        <!-- FIN NAVBAR -->
+
+        <!-- NAVBAR RESPONSIVE -->
+
+        <nav class="navbar navbar-light bg-light navResponsive">
+            <div class="container-fluid">
+                <div class="logoResponsive">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logos/MarshallLogo.png" class="animate__animated animate__fadeIn img-fluid logoResponsive" width="200" height="auto" alt="">
+                    </a>    
+                    <h1 class="medium wow animate__animated animate__backInUp">Audiovisuales</h1>
+                </div>
+                <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="images/logos/logoTransparente.png" class="animate__animated animate__backInDown img-fluid logoResponsive" width="250" height="auto" alt="">
+                        <a type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+                    </div>
+                    <div class="offcanvas-body" >
+                        
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-target="offcanvas" href="index.html#bio">Bio</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#galeria">Galería</a>
+                            </li>
+                        
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#formulario">Contacto</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- FIN NAVBAR RESPONSIVE -->
+
+    </header>
 
         <!-- GALERIA -->
         <section class="container">
 
-            <!-- GALERIA RETRATOS -->
-            <section class="row wow animate__fadeInUp animate__animated animate__slow mb-5">
-
-                <div class="col-md-7">
-
-                    <h2>Retratos /<span class="text-muted"> Miradas que cuentan historias.</span></h2>
-                    
-                    <p>Esta sección expone trabajos de retratos y escenas con una o más personas como elemento principal de la fotografía. Los retratos pueden ir desde una variante artística, a una informativa/periodística. Los book de fotos son una rama del retrato comercial, y se encuentran muy demandados, principalmente por modelos que buscan crear un portfolio profesional, pero también se utilizan a modo de recuerdo antes de un casamiento o cumpleaños de quince.</p>
-                    
-                </div>
-
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" width="500" height="auto" src="images/fotosGaleria/fotoBooks.jpg" data-holder-rendered="true">
-
-                </div>
-
-                <div class="botonGaleria mt-5">
-                        <a href="pages/retratos.html">
+            <section class="container mt-5">
+                <section class="row wow animate__animated animate__fadeInUp animate__slower text-center">
+                    <h2>Videos /<span class="text-muted"> Historias en 16:9</span></h2>
+                    <div class="col-md-12 text-center">
+                        <p>Los videos no son más que "fotos en movimiento", la mayoría de los conceptos aplicados en la fotogrfía se aplican en filmografía. Este tipo de trabajos audiovisuales pueden conllevar el montaje de un videoclip musical, un video institucional, un backstage de book de fotos o un sencillo cortometraje.</p>
+                        <p>Sin embargo, en mis trabajos, cada vez que filmo, siento que estoy relatando una historia. Los elementos que incluyo no son más que pequeñas muestras gráficas de todo un mundo que se encuentra detrás de las imágenes que logro capturar. Por eso me gusta mostrar mis videos relatando el transfondo de cada uno de ellos.
+                        </p>
+                    </div>
+                </section>
+                <section class="row wow animate__animated animate__fadeInUp animate__slower text-center">       
+                    <div class="col-md-12">
+                        <img class="img-fluid mx-auto mb-5 mt-5" alt="500x500" src="images/logos/bannerVideos.jpg" data-holder-rendered="true">
+                    </div>
+                    <div class="botonGaleria">
+                        <a href="pages/videos.html">
                             <button class="btn-dark p-1">
                                 <h3>Ver Galería</h3>
                             </button>
                         </a>
-                </div>
-
-            </section>
-            <!-- FIN GALERIA RETRATOS -->
-            <hr class="solid">
-            <!-- GALERIA CULTURALES -->
-            <section class="row wow animate__animated animate__fadeInUp animate__slower mb-5">
-
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Eventos culturales /<span class="text-muted"> Imágenes que se pueden sentir.</span></h2>
-
-                    <p>La fotografía forma una parte fundamental en los eventos culturales. Desde recitales hasta muestras artísticas de todos los niveles. Una práctica muy común en los últimos tiempos es también la de crear videoclips dentro de los estudios de grabación de las bandas de música.</p>
-
-                    
-                </div>
-
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/bandaRecital.jpg" data-holder-rendered="true" width="500" height="auto">
-                </div>
-
-                <div class="botonGaleria order-md-2 mt-5">
-                    <a href="pages/culturales.html">
-                        <button class="btn-dark p-1">
-                            <h3>Ver Galería</h3>
-                        </button>
-                    </a>
-                </div>
-
-            </section>
-            <!-- FIN GALERIA CULTURALES -->
-            <hr class="solid">
-            <!-- GALERIA NATURALEZA -->
-
-            <section class="row featurette wow animate__animated animate__fadeInUp animate__slower mb-5">
-
-                <div class="col-md-7">
-
-                    <h2 class="featurette-heading">Fotografía de naturaleza /<span class="text-muted"> La Madre tierra en HD.</span></h2>
-
-                    <p>Además del enorme potencial artístico que tiene el capturar la belleza e imponencia de los paisajes y los detalles llenos de vida que ofrece la naturaleza, este tipo de fotografía es muy importante a la hora de vender parajes naturales para atraer al turismo a zonas que, de otro modo, sólo conocerían a través de palabras.</p>
-
-                </div>
-
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoNaturaleza.jpg" data-holder-rendered="true" width="500" height="auto">
-                </div>
-
-                <div class="botonGaleria mt-5">
-                    <a href="pages/naturaleza.html">
-                        <button class="btn-dark p-1">
-                            <h3>Ver Galería</h3>
-                        </button>
-                    </a>
-                </div>
-
+                    </div>
+                </section> 
             </section>
 
-            <!-- FIN GALERIA NATURALEZA -->
-            <hr class="solid">
-            <!-- GALERIA URBANO -->
 
-            <section class="row wow animate__animated animate__fadeInUp animate__slower mb-5">
-
-                <div class="col-md-7 order-md-2">
-                    <h2>Fotografía urbana /<span class="text-muted"> Arte sobre cemento.</span></h2>
-                    <p>Al igual que la fotografía de la naturaleza, la urbana pretende plasmar de forma audiovisual la belleza que pueden tener las ciudades alrededor del mundo. Esta disciplina está muy emparejada con los book de fotos, ya que la temática urbana (estética y locación) ganó muchos adeptos en los últimos años.</p>
-                </div>
-
-                <div class="col-md-5 order-md-1">
-                    <img class="img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="images/fotosGaleria/fotoUrbanoV.jpg" data-holder-rendered="true" width="500" height="auto">
-                </div>
-
-                <div class="botonGaleria order-md-2 mt-5">
-                    <a href="pages/urbano.html">
-                        <button class="btn-dark p-1">
-                            <h3>Ver Galería</h3>
-                        </button>
-                    </a>
-                </div>
-
+            <section class="container mt-5">
+                <section class="row wow animate__animated animate__fadeInUp animate__slower text-center">
+                    <h2>Videos /<span class="text-muted"> Historias en 16:9</span></h2>
+                    <div class="col-md-12 text-center">
+                        <p>Los videos no son más que "fotos en movimiento", la mayoría de los conceptos aplicados en la fotogrfía se aplican en filmografía. Este tipo de trabajos audiovisuales pueden conllevar el montaje de un videoclip musical, un video institucional, un backstage de book de fotos o un sencillo cortometraje.</p>
+                        <p>Sin embargo, en mis trabajos, cada vez que filmo, siento que estoy relatando una historia. Los elementos que incluyo no son más que pequeñas muestras gráficas de todo un mundo que se encuentra detrás de las imágenes que logro capturar. Por eso me gusta mostrar mis videos relatando el transfondo de cada uno de ellos.
+                        </p>
+                    </div>
+                </section>
+                <section class="row wow animate__animated animate__fadeInUp animate__slower text-center">       
+                    <div class="col-md-12">
+                        <img class="img-fluid mx-auto mb-5 mt-5" alt="500x500" src="images/logos/bannerVideos.jpg" data-holder-rendered="true">
+                    </div>
+                    <div class="botonGaleria">
+                        <a href="pages/videos.html">
+                            <button class="btn-dark p-1">
+                                <h3>Ver Galería</h3>
+                            </button>
+                        </a>
+                    </div>
+                </section> 
             </section>
-            <!-- FIN GALERIA URBANO -->
-            <hr class="solid">
+
+
+            <section class="container mt-5">
+                <section class="row wow animate__animated animate__fadeInUp animate__slower text-center">
+                    <h2>Videos /<span class="text-muted"> Historias en 16:9</span></h2>
+                    <div class="col-md-12 text-center">
+                        <p>Los videos no son más que "fotos en movimiento", la mayoría de los conceptos aplicados en la fotogrfía se aplican en filmografía. Este tipo de trabajos audiovisuales pueden conllevar el montaje de un videoclip musical, un video institucional, un backstage de book de fotos o un sencillo cortometraje.</p>
+                        <p>Sin embargo, en mis trabajos, cada vez que filmo, siento que estoy relatando una historia. Los elementos que incluyo no son más que pequeñas muestras gráficas de todo un mundo que se encuentra detrás de las imágenes que logro capturar. Por eso me gusta mostrar mis videos relatando el transfondo de cada uno de ellos.
+                        </p>
+                    </div>
+                </section>
+                <section class="row wow animate__animated animate__fadeInUp animate__slower text-center">       
+                    <div class="col-md-12">
+                        <img class="img-fluid mx-auto mb-5 mt-5" alt="500x500" src="images/logos/bannerVideos.jpg" data-holder-rendered="true">
+                    </div>
+                    <div class="botonGaleria">
+                        <a href="pages/videos.html">
+                            <button class="btn-dark p-1">
+                                <h3>Ver Galería</h3>
+                            </button>
+                        </a>
+                    </div>
+                </section> 
+            </section>
+
            
-            </section>
-            <!-- FIN GALERIA VIDEOS -->
 
         </section>
         <!-- FIN GALERIA -->
