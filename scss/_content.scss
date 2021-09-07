@@ -91,8 +91,16 @@ a {
       }
     }
   }
+  
+  
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
+  
+  @media only screen and (min-width: 768px){
+    .imgGaleria {
+      box-shadow: -20px 20px 30px 1px #262727;
+    }
+  }
   /*BREAKPOINT 4: LARGE (lg) >= 992px */
   /*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
   /*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
