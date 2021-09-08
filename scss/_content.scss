@@ -24,9 +24,6 @@ a {
   font-style: oblique; 
 }
 
-.videoBanner {
-  width: 15rem; }
-
 @media only screen and (min-width: 768px) {
     h1 {
       font-weight: 500; 
@@ -143,6 +140,35 @@ a {
       filter:brightness(80%);
     }
   }
+
+  /**************************** SECCIONES INTERNAS DE VIDEOS ****************************/
+  
+  .videoBanner {
+    width: 15rem; 
+  }
+
+
+  /*BREAKPOINT 2: SMALL (sm) >= 576px */
+  @media only screen and (min-width: 500px){
+
+    .videoBanner {
+      width: 30rem; 
+    }
+    
+  }
+
+
+  /*BREAKPOINT 3: MEDIUM (md) >= 768px */
+  @media only screen and (min-width: 768px){
+
+    .videoBanner {
+      width: 30rem; 
+    }
+    
+  }
+
+
+  
 
   /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */  
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
