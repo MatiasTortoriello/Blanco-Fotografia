@@ -144,9 +144,8 @@ a {
   /**************************** SECCIONES INTERNAS DE VIDEOS ****************************/
   
   .videoBanner {
-    width: 15rem; 
+    height: 15rem;
   }
-
 
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
   @media only screen and (min-width: 500px){
@@ -157,7 +156,6 @@ a {
     
   }
 
-
   /*BREAKPOINT 3: MEDIUM (md) >= 768px */
   @media only screen and (min-width: 768px){
 
@@ -167,6 +165,24 @@ a {
     
   }
 
+  /*BREAKPOINT 4: LARGE (lg) >= 992px */
+  @media only screen and (min-width: 992px){
+
+    .videoBanner {
+      width: 40rem; 
+    }
+    
+  }
+
+  @media only screen and (min-width: 1200px){
+
+    .videoBanner {
+      height: 25rem; 
+    }
+    
+  }
+
+  
 
   
 
