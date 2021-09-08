@@ -208,6 +208,11 @@ a {
 .videoBanner {
   height: 15rem; }
 
+.videoReproduccion {
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 5px; }
+
 @media only screen and (min-width: 500px) {
   .videoBanner {
     width: 30rem; } }
