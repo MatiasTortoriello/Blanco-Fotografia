@@ -147,7 +147,6 @@ a {
     height: 15rem;
   }
 
-  /*BREAKPOINT 2: SMALL (sm) >= 576px */
   @media only screen and (min-width: 500px){
 
     .videoBanner {
@@ -156,7 +155,6 @@ a {
     
   }
 
-  /*BREAKPOINT 3: MEDIUM (md) >= 768px */
   @media only screen and (min-width: 768px){
 
     .videoBanner {
@@ -165,7 +163,6 @@ a {
     
   }
 
-  /*BREAKPOINT 4: LARGE (lg) >= 992px */
   @media only screen and (min-width: 992px){
 
     .videoBanner {
@@ -182,9 +179,7 @@ a {
     
   }
 
-  
 
-  
 
   /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */  
   /*BREAKPOINT 2: SMALL (sm) >= 576px */
