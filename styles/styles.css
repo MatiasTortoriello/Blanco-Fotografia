@@ -33,7 +33,7 @@
         color: black; }
 
 .offcanvas-top {
-  height: 60%; }
+  height: 75%; }
 
 /*BREAKPOINT 2: SMALL (sm) >= 576px */
 @media only screen and (min-width: 576px) {
@@ -204,7 +204,7 @@ a {
   .item :hover {
     filter: brightness(80%); }
 
-/**************************** SECCIONES INTERNAS DE VIDEOS ****************************/
+/**************************** SECCIONES INTERNAS DE VIDEOS ***************/
 .videoBanner {
   height: 15rem; }
 
