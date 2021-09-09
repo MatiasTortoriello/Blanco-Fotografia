@@ -171,7 +171,7 @@ a {
 
     /* Como tengo videos hosteados en Youtube y otros en Google Drive (Por una cuestión de Copyright), tengo que agregar una clase distinta, ya que los de Google Drive estiran mucho el thumbnail */ 
   .videoReproduccionDrive {
-    width: 50%;
+    width: 60%;
     height: 25vh;
   }
 
@@ -182,6 +182,11 @@ a {
     .videoBanner {
       width: 40rem; 
     }
+
+    .videoReproduccionDrive {
+      width: 40%;
+      height: 25vh;
+    }
     
   }
 
@@ -190,7 +195,19 @@ a {
     .videoBanner {
       height: 25rem; 
     }
+
+    .videoReproduccionDrive {
+      width: 25%;
+      height: 25vh;
+    }
     
+  }
+
+  @media only screen and (min-width: 1200px){
+  
+  
+  
+  
   }
 
 
