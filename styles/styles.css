@@ -229,13 +229,15 @@ a {
   .videoBanner {
     width: 40rem; }
   .videoReproduccionDrive {
-    width: 40%; } }
+    width: 50vw;
+    height: 40vh; } }
 
 @media only screen and (min-width: 1200px) {
   .videoBanner {
     height: 25rem; }
   .videoReproduccionDrive {
-    width: 25%; } }
+    width: 50%;
+    height: 60vh; } }
 
 /* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */
 /*BREAKPOINT 2: SMALL (sm) >= 576px */
