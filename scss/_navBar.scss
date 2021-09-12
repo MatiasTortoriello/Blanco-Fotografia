@@ -1,10 +1,6 @@
 
 /********************ELEMENTOS DEL NAV*******************************/
 
-/*BREAKPOINT 1: X-SMALL (xs) <576px */
-
-
-
 .navGrande{
   display: none;
 }
@@ -40,11 +36,11 @@
 
 
 .offcanvas-top{
-  height: 75%;
+  height: 70%;
 }
 
 
-  /*BREAKPOINT 2: SMALL (sm) >= 576px */
+
   @media only screen and (min-width: 576px) {
     .botonera {
       display: flex;
@@ -59,7 +55,7 @@
     }
   }
     
-  /*BREAKPOINT 3: MEDIUM (md) >= 768px */
+
   @media only screen and (min-width: 768px) {
 
     .navGrande{
@@ -88,7 +84,7 @@
     }
   }
 
-  /*BREAKPOINT 4: LARGE (lg) >= 992px */
+
   @media only screen and (min-width: 992px) {
     .botonera {
       display: $d-flex;

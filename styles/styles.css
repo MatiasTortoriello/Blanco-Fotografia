@@ -3,7 +3,6 @@
 /*Flexbox*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 /********************ELEMENTOS DEL NAV*******************************/
-/*BREAKPOINT 1: X-SMALL (xs) <576px */
 @import url(animate.css);
 .navGrande {
   display: none; }
@@ -33,9 +32,8 @@
         color: black; }
 
 .offcanvas-top {
-  height: 75%; }
+  height: 70%; }
 
-/*BREAKPOINT 2: SMALL (sm) >= 576px */
 @media only screen and (min-width: 576px) {
   .botonera {
     display: flex;
@@ -47,7 +45,6 @@
       justify-content: space-evenly;
       list-style: none; } }
 
-/*BREAKPOINT 3: MEDIUM (md) >= 768px */
 @media only screen and (min-width: 768px) {
   .navGrande {
     display: block; }
@@ -66,7 +63,6 @@
       justify-content: space-evenly;
       list-style: none; } }
 
-/*BREAKPOINT 4: LARGE (lg) >= 992px */
 @media only screen and (min-width: 992px) {
   .botonera {
     display: flex;
@@ -112,7 +108,6 @@ h1 {
   font-weight: 500; }
 
 p {
-  /* font-size: 1rem; */
   font-weight: 200 !important; }
 
 a {
@@ -141,7 +136,6 @@ a {
   display: block; }
 
 /************************SECCIÓN BIO******************************/
-/*BREAKPOINT 1: X-SMALL (xs) <576px */
 .bio {
   width: 100%;
   height: auto;
@@ -153,13 +147,7 @@ a {
     border: 5px black solid;
     box-shadow: -20px 20px 20px 1px #262727; }
 
-/*BREAKPOINT 2: SMALL (sm) >= 576px */
-/*BREAKPOINT 3: MEDIUM (md) >= 768px */
-/*BREAKPOINT 4: LARGE (lg) >= 992px */
-/*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
-/*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
 /********************SECCIÓN GALERÍA*********************************/
-/*BREAKPOINT 1: X-SMALL (xs) <576px */
 .botonGaleria {
   display: flex;
   justify-content: center;
@@ -170,16 +158,12 @@ a {
       font-size: 1.5rem;
       margin: 5px; }
 
-/*BREAKPOINT 2: SMALL (sm) >= 576px */
-/*BREAKPOINT 3: MEDIUM (md) >= 768px */
+/* Utilizo este mediaquery ya que no quiero que las sombras aparezcan en resoluciones móviles, por una cuestión de optmización de tiempos de carga */
 @media only screen and (min-width: 768px) {
   .imgGaleria {
     box-shadow: -20px 20px 30px 1px #262727; } }
 
-/*BREAKPOINT 4: LARGE (lg) >= 992px */
-/*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
-/*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
-/* BOTÓN "Volver Arriba" */
+/********** BOTÓN "Volver Arriba" *************/
 #volverArriba {
   display: none;
   position: fixed;
@@ -246,20 +230,7 @@ a {
     width: 50%;
     height: 60vh; } }
 
-/* ME DEJO ESTO POR ACÁ PARA USARLO COMO AYUDA MEMORIA PARA LOS MEDIAQUERYS DE BOOTSTRAP */
-/*BREAKPOINT 2: SMALL (sm) >= 576px */
-/*BREAKPOINT 3: MEDIUM (md) >= 768px */
-/*BREAKPOINT 4: LARGE (lg) >= 992px */
-/*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
-/*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
-/*BREAKPOINT 1: X-SMALL (xs) <576px */
-/*BREAKPOINT 2: SMALL (sm) >= 576px */
-/*BREAKPOINT 3: MEDIUM (md) >= 768px */
-/*BREAKPOINT 4: LARGE (lg) >= 992px */
-/*BREAKPOINT 5: X-LARGE (xl) >= 1200px */
-/*BREAKPOINT 6: XX-LARGE (xxl) >=1400px */
 /********************SECCIÓN FOOTER**********************************/
-/*BREAKPOINT 1: X-SMALL (xs) <576px */
 footer {
   display: flex;
   justify-content: center;
@@ -269,7 +240,6 @@ footer {
   color: black;
   text-align: center; }
 
-/*BREAKPOINT 3: MEDIUM (md) >= 768px */
 @media only screen and (min-width: 768px) {
   footer {
     display: flex;
@@ -278,7 +248,6 @@ footer {
     padding-top: 2%;
     border-top: solid 1px black; } }
 
-/*BREAKPOINT 4: LARGE (lg) >= 992px */
 @media only screen and (min-width: 992px) {
   footer {
     display: flex;

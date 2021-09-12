@@ -1,7 +1,7 @@
 
 /********************SECCIÓN FOOTER**********************************/
 
-/*BREAKPOINT 1: X-SMALL (xs) <576px */
+
 footer {
     display: $d-flex;
     justify-content: $jCcenter;
@@ -11,7 +11,7 @@ footer {
     color: black;
     text-align: center; }
 
-    /*BREAKPOINT 3: MEDIUM (md) >= 768px */
+
 @media only screen and (min-width: 768px) {
 
     footer {
@@ -22,7 +22,7 @@ footer {
       border-top: solid 1px black; } 
 }
   
-  /*BREAKPOINT 4: LARGE (lg) >= 992px */
+
   @media only screen and (min-width: 992px) {
     
     footer {
