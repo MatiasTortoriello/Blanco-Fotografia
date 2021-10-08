@@ -271,5 +271,13 @@
     "yargs": "^13.3.2",
     "yargs-parser": "^20.2.9"
   },
-  "description": ""
+  "description": "Proyecto de Sitio Web de curso de Desarrollo Web en Coderhouse.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasTortoriello/Proyecto-CoderHouse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MatiasTortoriello/Proyecto-CoderHouse/issues"
+  },
+  "homepage": "https://github.com/MatiasTortoriello/Proyecto-CoderHouse#readme"
 }
