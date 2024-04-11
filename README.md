@@ -1,3 +1,3 @@
-# Proyecto-CoderHouse
+# Proyecto Blanco Fotografía
 
-Proyecto de Sitio Web de curso de Desarrollo Web en Coderhouse.
+Proyecto de landing page para productora audiovisual.
